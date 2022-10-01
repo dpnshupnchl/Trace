@@ -1,15 +1,36 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import ApiPut from './ApiPut'
+
 
 const Put = () => {
 
+  const [name,setName] = useState("");
+  const [mail,setMail] = useState("");
+
     const putData = () => {
-     const result = ApiPut("https://jsonplaceholder.typicode.com/posts/1")
+
+      var options = {
+        method:"PUT",
+        headers:{
+            "Content-type":"application/json",
+        },
+        body:JSON.stringify({
+            name,
+            mail
+        })
+
+      }
+
+     const result = ApiPut("https://jsonplaceholder.typicode.com/posts/1",options)
      console.log(result);
     }
 
   return (
-    <div><button onClick={putData}>PUT DATA</button></div>
+    <>
+    <input type="text" placeholder="name" value={name} onChange={(e) => setName(e.target.value)}></input>
+    <input type="mail" placeholder="email" value={mail} onChange={(e) => setMail(e.target.value)}></input>
+    <div><button onClick={putData}>UPDATE DATA</button></div>
+    </>
   )
 }
 

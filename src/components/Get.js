@@ -7,6 +7,7 @@ const Get = () => {
     const [todos,setTodos] = useState({});
 
     const gettingApi = async () => {
+
           const receiver = await ApiGet('https://jsonplaceholder.typicode.com/posts')
           setTodos(receiver);
        console.log(receiver);

@@ -1,19 +1,8 @@
 
- async function ApiPut(url){
+ async function ApiPut(url,config){
+ 
     try{
-        const res = await fetch((url),{
-        method:"PUT",
-        headers:{
-            "Content-type":"application/json",
-        },
-        body:JSON.stringify({
-            id: 1223,
-            title: 'Updated Title',
-            body: 'This is new body',
-            userId: 1,
-        })
-
-      })
+        const res = await fetch((url),config)
       const data = await res.json();
       return data;
     }
