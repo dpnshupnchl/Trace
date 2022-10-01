@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import ApiPut from './ApiPut'
-
+import { ApiPut } from './Trace';
 
 const Put = () => {
 

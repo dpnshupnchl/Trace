@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ApiPost from './ApiPost'
+import { ApiPost } from './Trace';
 
 const Post = () => {
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-import ApiGet from './ApiGet';
+import { ApiGet } from './Trace'
 
 const Get = () => {
     
