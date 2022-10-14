@@ -9,19 +9,19 @@
 }
 
 .mainHead{
-  font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: 'Work Sans', sans-serif; 
   color: white;
   font-size: 6rem;
   margin: 0;
   text-shadow: 2px -1px 8px rgba(100,100,100,0.6);
 }
 .subhead{
-  font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: 'Work Sans', sans-serif; 
   color: white;
   font-size: 2rem;
 }
 .minihead{
-  font-family: 'IBM Plex Sans', sans-serif; 
+  font-family: 'Work Sans', sans-serif; 
   text-align: center;
   color: white;
   font-size: 1.2rem;
@@ -41,4 +41,90 @@
 }
 .card-social a{
   color: aliceblue;
+}
+
+#response{
+  width: 50%;
+  background-color: #40284e;
+background-image: linear-gradient(90deg, #40284e 0%, #5e1472 50%, #8c0aa1 100%);
+border-radius: 0.9rem;
+  color: white;
+  padding: 2rem;
+  font-family: "work sans", sans-serif;
+}
+#response p{
+  font-size: 1.2rem;
+}
+.form-contain{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  margin: 2rem;
+  flex-direction: column;
+  padding: 2rem 1rem 2rem 1rem;
+  box-shadow: 10px 10px 109px 21px rgba(227,227,227,1);
+}
+.form input{
+  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: rgb(239, 239, 239);
+  border: 0.1rem solid white;
+  transition: all 0.5s;
+  font-size: 1.1rem;
+}
+.form input:active{
+  border: 0.1rem solid rgb(128, 31, 128);
+}
+.form input:focus{
+  border: 0.1rem solid rgb(128, 31, 128);
+
+}
+.form button{
+  background-color: #44197b;
+  color: white;
+  outline: none;
+  border: 0.1rem solid #44197b;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+.form button:hover{
+  background-color: purple;
+  border: 0.1rem solid purple;
+  border-radius: 0.5rem;
+
+}
+.form button:active{
+  transform: scale(0.95);
+  background-color: purple;
+  border: 0.1rem solid purple;
+  box-shadow: 5px 5px 20px 2px rgb(190, 190, 190);
+  
+}
+
+.heading{
+  font-family: "work sans",sans-serif;
+   font-size: 2.5rem;
+   font-weight: bold;
+   color:#3d196d;
+   text-align: center;
+   margin: 0;
+   padding: 1rem;
+}
+.big-div{
+  background-color: #f9f5ff;
+  height: 100vh;
+  
 }
